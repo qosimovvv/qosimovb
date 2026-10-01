@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UstozTop Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>body{padding:32px}.admin-shell{max-width:1000px;margin:auto}.admin-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}.admin-head h1{font:800 32px Manrope;color:#183f35;margin:7px 0}.admin-key{display:flex;gap:8px}.admin-key input{padding:11px;border:1px solid #dbe3dd}.admin-key button,.verify-button{border:0;background:#1b4d3f;color:white;padding:11px 15px;cursor:pointer}.admin-table{background:white;border:1px solid #e5ece7}.admin-row{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 180px;gap:12px;align-items:center;padding:15px;border-bottom:1px solid #edf1ed;font-size:12px}.admin-row.head{font-size:10px;text-transform:uppercase;color:#71827a;background:#f3f8f4}.admin-status{font-size:10px;font-weight:700}.pending{color:#b97921}.verified{color:#287258}.rejected{color:#b34e3e}.reject-button{border:1px solid #e5b5a9;background:#fff5f2;color:#ac5a48;padding:9px;margin-left:5px;cursor:pointer}.admin-message{color:#688178;font-size:13px;margin:15px 0}@media(max-width:700px){body{padding:16px}.admin-head{align-items:start;flex-direction:column;gap:16px}.admin-row{grid-template-columns:1fr 1fr}.admin-row.head{display:none}}</style>
+</head>
+<body><main class="admin-shell"><div class="admin-head"><div><span class="section-kicker">USTOZTOP</span><h1>Ustozlar tekshiruvi</h1><p class="admin-message">Sertifikatlarni ko‘rib chiqing va faqat ishonchli profillarni tasdiqlang.</p></div><div class="admin-key"><input id="admin-key" type="password" placeholder="Admin kaliti" /><button id="load-button">Yuklash</button></div></div><div id="admin-message" class="admin-message"></div><div class="admin-table"><div class="admin-row head"><span>Ustoz</span><span>Fan / hudud</span><span>Sertifikatlar</span><span>Holat</span><span>Amal</span></div><div id="admin-list"></div></div></main><script src="admin.js"></script></body>
+</html>
